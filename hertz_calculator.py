@@ -1,18 +1,15 @@
-def introduce_frecuency(a4=440):
+def introduce_frecuency(a0=440/16):
     flag = True
     while flag:
-        a4 = int(input("Introduce A4 hz (440 normaly): "))
-        if type(a4) == int:
+        a0 = int(input("Introduce A4 hz (440 normaly): "))
+        if type(a0) == int:
             flag = False
-            return a4
-        else:  # type(a4) != int or type(a4) == float:
+            return a0
+        else:  # type(a0) != int or type(a0) == float:
             print("Only numbers!")
 
 
-a4 = introduce_frecuency()
-# The first A
-a0 = a4 / 16
-
+a0 = introduce_frecuency()
 # The 12 piano notes
 notes = ["A", "A#", "B", "C", "C#", "D", "D#", "E", "F", "F#", "G", "G#"]
 
